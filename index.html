@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Refresh" content="0; url='https://apps.apple.com/app/apple-store/id6670312523?pt=127053095&ct=getlink&mt=8'" />
     <title>Get Story app</title>
     <meta property="og:title" content="‎Story: Spatial Storytelling">
     <meta property="og:description" content="‎Story app is bringing an unprecedented spatial storytelling experience to all Vision Pro users.">
@@ -34,5 +34,25 @@
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var baseUrl = 'https://apps.apple.com/app/apple-store/id6670312523?pt=127053095&ct=getlink&mt=8';
+        var referrer = document.referrer;
+        if (referrer) {
+          try {
+            var referrerDomain = new URL(referrer).hostname.replace(/\./g, '_');
+            baseUrl = `https://apps.apple.com/app/apple-store/id6670312523?pt=127053095&ct=getlink_${referrerDomain}&mt=8`;
+          } catch (error) {
+            console.error('Invalid referrer URL:', error);
+          }
+        }
+        window.location.href = baseUrl;
+      });
+    </script>
   </head>
+  <body>
+    <noscript>
+      <p><a href="https://apps.apple.com/app/apple-store/id6670312523?pt=127053095&ct=getlink&mt=8">Please visit here to continue.</a></p>
+    </noscript>
+  </body>
 </html>
